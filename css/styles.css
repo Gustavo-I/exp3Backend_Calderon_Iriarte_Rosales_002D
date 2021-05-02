@@ -1,0 +1,150 @@
+body{
+    background-color: #DCE7E6;
+}
+hr{
+    width: 300px;
+    
+}
+#pwords{
+    width: 500px;
+    text-align: center;
+    
+}
+.busqueda{
+     margin-right: 10px;
+     max-width: 200px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+
+
+}
+.boton-busqueda{
+  
+    border-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
+    
+    
+
+ 
+
+    
+
+}
+.carrito{
+    margin-bottom: auto;
+}
+.navbar{
+    background-color: #DCE7E6;
+    border-style: solid;
+    border-color: #DCE7E6;
+    border-bottom-color: #B8C7D2;
+    text-align: center;
+    
+}
+.carusel{
+    height: 300px;
+    
+    border-radius: 10px;
+}
+
+.tit{
+background-color: #DCE7E6;
+
+border-radius: 10px;
+border-top-right-radius: 2px;
+border-top-left-radius: 2px;
+border-style: unset;
+border-color: aliceblue;
+
+
+}
+.landing{
+    background-color: #DCE7E6;
+}
+.po{
+    border-radius: 10px;
+    padding: 5px;
+  
+    
+}
+.nav2{
+    height: 5px;
+    background-color: #B8C7D2 ;
+
+}
+.words{
+    text-align: center;
+}
+.carrusel{
+    border-radius: 10px;
+}
+.footer{
+    background-color: #64696D;
+   
+}
+
+.carousell{
+   
+    min-height: 240px;
+    padding: 40px;
+    border-radius: 2px;
+    text-align: center;
+}
+.carousell p{
+    font-size: 26px;
+    font-weight: 400px;
+    color: #1a1a1a;
+}
+.raiting i{
+    color: #4BA7C6;
+    font-size: 26px;
+   
+}
+.testimonial-user{
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+.testimonial-user h6{
+    margin-bottom: 0px;
+}
+.testimonial-user span{
+    font-size: 12px;
+}
+.testimonial-user img{
+    border-radius: 50%;
+    max-width: 50px;
+    text-align: center;
+    align-self: center;
+    
+}
+.h5f{
+    text-align: center;
+    background-color: #64696D;
+
+}
+.let{
+    text-align: center;
+    background-color:#B8D9E4;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    ;
+}
+.plet{
+    margin-top: 15px;
+    
+}
+.h3let{
+    padding-top: 50px;
+}
+.botonlet{
+    margin-bottom: 50px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:8px ;
+    padding-bottom:8px ;
+    border-radius: 15px;
+}

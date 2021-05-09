@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ValhallaGeek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="img/logo4.png">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top">
+        <a class="navbar-brand" href="inicio.html">
+            <img src="img/logo4.png" width="50" height="50" alt="">
+        <a class="navbar-brand" href="inicio.html">ValhallaGeek</a>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link " href="tienda.html">Tienda </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="quienes_somos.html">Quienes somos</a>
+                </li>
+
+
+            </ul>
+            
+
+            <form class="form-inline d-flex flex-row "> 
+                <button type="submit" class="btn btn-info ml-5 boton-busqueda" ><i class="bi bi-search"></i></button>
+                
+                <input class="form-control   ml-0 busqueda " placeholder="Buscar" aria-label="search">
+                    
+                <button type="button  " class="btn  btn-info  m  "><i class="bi bi-cart"></i></button>
+
+
+             </form>
+            
+            
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </nav>
+    <nav class="container">
+
+        <form  id="#" method="POST" action="enviar.js" name="formregistro">
+            <label for="nombre">Nombre </label>
+            <input type="text" name="nombreUser" class="form-control" required>
+            <label for="apellido">Apellido </label>
+            <input type="text " name="apellidoUser" class="form-control" required>
+            <label for="email">Email</label>
+            <input type="email" name="emailUser" class="form-control" required>
+            <label for="email2">repetir Email</label>
+            <input type="email" name="emailUser2" class="form-control" required>
+            <label for="password">Contraseña</label>
+            <input type="password" name="passwordUser" class="form-control" required>
+            <label for="password2">Repetir Contraseña</label>
+            <input type="password" name="passwordUser2" class="form-control" required>
+            <label for="rut2">Rut </label>
+            <input type="text" name="rutUser" class="form-control" required>
+            <label for="telefono">Teléfono</label>
+            <input type="number" name="telefonoUser" class="form-control" required>
+            
+            <label for="Regiones">Región</label>
+
+            <select name="Region" class="form-control">
+                <option value="">Eliga Región</option>
+                <option value="1">Región de Arica Y Parinatoca</option>ó
+                <option value="2">Región de Tarapaca</option>
+                <option value="3">Región de Antofagasta</option>
+                <option value="4">Región de Atacama</option>
+                <option value="5">Región de Coquimbo</option>
+                <option value="6">Región de Valparaíso</option>
+                <option value="7">Región Metropolitana de Santiago</option>
+                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
+                <option value="9">Región del Maule</option>
+                <option value="10">Región del Ñuble</option>
+                <option value="11">Región del Biobío</option>
+                <option value="12">Región de La Araucanía</option>
+                <option value="13">Región de Los Ríos</option>
+                <option value="14">Región de Los Lagos</option>
+                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
+                <option value="16">Región de Magallanes y la Antártica Chilena</option>
+            </select>
+            <label for="comuna">Comuna</label>
+            <select name="comuna" class="form-control">
+                <option value=""> Eliga comuna</option>
+
+
+
+            </select>
+            <label for="calle">Calle</label>
+            <input type="text" name="calleUser" required class="form-control">
+            
+        </form>
+    </nav>
+
+    <footer class=" py-4 footer text-white ">
+        <div class="container">
+            <nav class="row">
+
+                <a href="#" class=" text-reset text-uppercase d-flex  align-items-center mr-2  ">
+                    <img src="img/logo4.png" width="35" height="35" class="img-logo " >
+                    
+                </a>
+
+                <ul class="col-3 list-unstyled mr-3">
+                    <li class="font-weight-bold text-uppercase">Contacto</li>
+                    <li><a href="#" class="text-reset">Cel +56912345678 </a></li>
+                    
+                    <li><a target="_blank"
+                            href="https://www.google.cl/maps/place/Miraflores+22,+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4422954,-70.6471414,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c59f7bcde2c7:0x5541267bc696a344!8m2!3d-33.4422999!4d-70.6449527"
+                            class="text-reset">Address Miraflores 22 Santiago </a></li>
+                    <li><a href="#" class="text-reset">Correo xxxxxx@duocuc.cl </a></li>
+
+                </ul>
+                <ul class="col-3 list-unstyled mr-5 pr-3">
+                    <li class="font-weight-bold text-uppercase ">Integrantes</li>
+                    <li><a href="https://www.linkedin.com/in/robert-calderon-vasquez-a8a32b1ba"  target="_blank" class="text-reset">Robert Calderon </a></li>
+                    <li><a href="#" class="text-reset">Gustavo Iriarte </a></li>
+                    <li><a href="https://www.linkedin.com/in/benjam%C3%ADn-andr%C3%A9s-rosales-rojas-5346581ba/" target="_blank" class="text-reset">Benjamin Rosales </a></li>
+
+                </ul>
+                <ul class="col-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase"> Redes sociales</li>
+                    <li class="d-flex justify-content-between ">
+                        <a href="#" class="text-reset"><i class="bi bi-facebook"></i> </a>
+                        <a href="https://www.instagram.com/vallhalageek/" class="text-reset"><i class="bi bi-instagram"></i> </a>
+                        <a href="#" class="text-reset"><i class="bi bi-twitter"></i> </a>
+                        <a href="#" class="text-reset"><i class="bi bi-twitch"></i> </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+
+
+        </div>
+        <nav class="container-fluid">
+            <h6 class="h5f">@Copyrigth Derechos reservados.</h6>
+        </nav>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>

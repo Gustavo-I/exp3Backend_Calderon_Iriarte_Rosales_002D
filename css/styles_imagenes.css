@@ -4,6 +4,15 @@
     box-sizing: border-box;
   }
 
+  body{
+    background-color: #DCE7E6;
+  }
+
+  body.darkmode{
+    background-color: #25201F;
+    color: #DCE7E6;
+  }
+
   .cont-modelkits{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

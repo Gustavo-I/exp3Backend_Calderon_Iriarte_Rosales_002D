@@ -59,59 +59,135 @@
 
 
     </nav>
-    <nav class="container">
+    <div class="container sd ">
+        <h3 class="h1row">Registro de usuario</h3>
+        
+          
 
-        <form  id="#" method="POST" action="enviar.js" name="formregistro">
-            <label for="nombre">Nombre </label>
-            <input type="text" name="nombreUser" class="form-control" required>
-            <label for="apellido">Apellido </label>
-            <input type="text " name="apellidoUser" class="form-control" required>
-            <label for="email">Email</label>
-            <input type="email" name="emailUser" class="form-control" required>
-            <label for="email2">repetir Email</label>
-            <input type="email" name="emailUser2" class="form-control" required>
-            <label for="password">Contraseña</label>
-            <input type="password" name="passwordUser" class="form-control" required>
-            <label for="password2">Repetir Contraseña</label>
-            <input type="password" name="passwordUser2" class="form-control" required>
-            <label for="rut2">Rut </label>
-            <input type="text" name="rutUser" class="form-control" required>
-            <label for="telefono">Teléfono</label>
-            <input type="number" name="telefonoUser" class="form-control" required>
+                <form  id="#" method="POST" action="enviar.js" name="formregistro" >
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="nombre">Nombre  </label>
+                            <label class="asterisco">* </label>
+
+                            <input type="text" name="nombreUser" class="form-control inputfo" required>
+                        </div>
+                        <div class="form-group col-6">    
+                            <label for="apellido">Apellido </label>
+                            <label class="asterisco">* </label>
+                            <input type="text " name="apellidoUser" class="form-control inputfo" required>
+                        </div>
+                    
+                        <div class="col-6">
+                            <label for="email">Email</label>
+                            <label class="asterisco">* </label>
+                            <input type="email" name="emailUser" class="form-control inputfo" required> 
+
+
+                        </div>
+                        <div class="col-6">
+                            <label for="email2">repetir Email</label>
+                            <label class="asterisco">* </label>
+                            <input type="email" name="emailUser2" class="form-control inputfo" required>    
+
+                        </div>
+                        <div class="col-6">
+                            <label for="password">Contraseña</label>
+                            <label class="asterisco">* </label>
+                            
+
+                            <input type="password" name="passwordUser" class="form-control inputfo" required>   
+                        </div>
+                        <div class="col-6">
+                            <label for="password2">Repetir Contraseña</label>
+                            <label class="asterisco">* </label>
+                            <input type="password" name="passwordUser2" class="form-control inputfo" required>  
+
+                        </div>
+                        <div class="col-6">
+                            <label for="rut2">Rut </label>
+                             <label class="asterisco asteriscorut">* sin puntos y con guión</label>
+                             
+
+                             <input type="text" name="rutUser" class="form-control inputfo" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="telefono">Teléfono</label>
+                            <label class="asterisco">* </label>
+
+                            <input type="number" name="telefonoUser" class="form-control inputfo" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="lmensaje">Seleccione Genero: </label>
+                            <br>
+                            <input type="radio" id="hombre" name="genero" value="hombre">
+                            <label for="hombre">hombre</label>
+                        
+                            <input type="radio" class="ml-2" id="mujer" name="genero" value="mujer">
+                            <label for="mujer" >Mujer</label>
+                            <input type="radio" class="ml-2" id="otro" name="genero" value="otro">
+                            <label for="otro"> Otro</label>
+
+
+                        </div>
+                        <div class="col-6">
+                            <label for="Regiones">Región</label>
+                            <label class="asterisco">* </label>
+
+                            <select name="Region" class="form-control inputfo">
+                                <option value="" class="">Eliga Región</option>
+                                <option value="1">Región de Arica Y Parinatoca</option>ó
+                                <option value="2">Región de Tarapaca</option>
+                                <option value="3">Región de Antofagasta</option>
+                                <option value="4">Región de Atacama</option>
+                                <option value="5">Región de Coquimbo</option>
+                                <option value="6">Región de Valparaíso</option>
+                                <option value="7">Región Metropolitana de Santiago</option>
+                                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
+                                <option value="9">Región del Maule</option>
+                                <option value="10">Región del Ñuble</option>
+                                <option value="11">Región del Biobío</option>
+                                <option value="12">Región de La Araucanía</option>
+                                <option value="13">Región de Los Ríos</option>
+                                <option value="14">Región de Los Lagos</option>
+                                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="16">Región de Magallanes y la Antártica Chilena</option>
+                            </select>
+
+                        </div>
+                        <div class="col-6">
+                            <label for="comuna"> comuna</label>
+                            <label class="asterisco">* </label>
+                            <select name=comuna class="form-control inputfo"> 
+                                
+                                <option value="">elegir comuna</option>
+                            </select>
+
+                        </div>
+                        <div class="col-6">
+                            <label for="calle">calle</label>
+                            <label class="asterisco">* </label>
+                            <input type="text" name="calleUser" class="form-control inputfo" required>
+
+                        </div>
+                        <div class="col-6">
+                            <label for="numero">numero</label>
+                            <label class="asterisco">* </label>
+                            <input type="text" name="numeroCalleuser" class="form-control inputfo" required>
+                        </div>
+                   
+                        
+                    </div>
+                    <input type="checkbox" id="comida1" name="plato1" value="Cochayuyo" required>
+                    <label for="lmensaje" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
+                    
+                    <a href="tienda.html"><button type="button" class="btn btn-info mt-2 btn-enviar">Crear Cuenta</button></a>
+                </form>
+                
             
-            <label for="Regiones">Región</label>
-
-            <select name="Region" class="form-control">
-                <option value="">Eliga Región</option>
-                <option value="1">Región de Arica Y Parinatoca</option>ó
-                <option value="2">Región de Tarapaca</option>
-                <option value="3">Región de Antofagasta</option>
-                <option value="4">Región de Atacama</option>
-                <option value="5">Región de Coquimbo</option>
-                <option value="6">Región de Valparaíso</option>
-                <option value="7">Región Metropolitana de Santiago</option>
-                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
-                <option value="9">Región del Maule</option>
-                <option value="10">Región del Ñuble</option>
-                <option value="11">Región del Biobío</option>
-                <option value="12">Región de La Araucanía</option>
-                <option value="13">Región de Los Ríos</option>
-                <option value="14">Región de Los Lagos</option>
-                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
-                <option value="16">Región de Magallanes y la Antártica Chilena</option>
-            </select>
-            <label for="comuna">Comuna</label>
-            <select name="comuna" class="form-control">
-                <option value=""> Eliga comuna</option>
-
-
-
-            </select>
-            <label for="calle">Calle</label>
-            <input type="text" name="calleUser" required class="form-control">
             
-        </form>
-    </nav>
+    </div>
+    
 
     <footer class=" py-4 footer text-white ">
         <div class="container">

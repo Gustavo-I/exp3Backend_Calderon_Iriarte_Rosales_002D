@@ -36,6 +36,7 @@
 
             </ul>
             
+            <button id="bdark"><i class="bi bi-sun"></i></button>
 
             <form class="form-inline d-flex flex-row "> 
                 <button type="submit" class="btn btn-info ml-5 boton-busqueda" ><i class="bi bi-search"></i></button>
@@ -335,6 +336,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('body');
+        bdark.addEventListener('click', e =>{
+            body.classList.toggle('darkmode');
+        });
+    </script>
 </body>
 
 </html>

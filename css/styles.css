@@ -1,6 +1,12 @@
 body{
     background-color: #DCE7E6;
-}
+    transition: .3s ease all;
+  }
+
+  body.darkmode{
+    background-color: #25201F;
+    color: #DCE7E6;
+  }
 hr{
     width: 300px;
     
@@ -43,6 +49,11 @@ hr{
     border-bottom-color: #B8C7D2;
     text-align: center;
     
+}
+body.darkmode .navbar{
+    background-color: #25201F;
+    color: #DCE7E6;
+    transition: .3s ease all;
 }
 .carusel{
     height: 300px;
@@ -190,4 +201,31 @@ border-color: aliceblue;
 }
 .asteriscorut{
     font-size: 12px;
+}
+
+#myBtn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    background-color: #25201F;
+    color: #DCE7E6;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transform: scale(1);
+    transition: .3s ease all;
+}
+body.darkmode #myBtn{
+  background-color: #DCE7E6;
+  color: #25201F;
+}
+#myBtn:hover{
+    transform: scale(1.1);
+    border-color: rgb(0, 0, 0);
 }

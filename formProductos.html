@@ -64,59 +64,58 @@
 
                 <form  id="#" method="POST" action="enviar.js" name="formregistro" >
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6" id="idMultiTipo">
                             <label for="lmensaje">Productos de varias categorias</label>
                             <br>
-                            <input type="radio" id="positiv" name="positivo" value="si">
+                            <input type="radio" id="positivo" name="idMultiTipo" value="positivo">
                             <label for="positivo">Si</label>
-                            <input type="radio" class="ml-2" id="negativ" name="negativo" value="no">
+                            <input type="radio" class="ml-2" id="negativo" name="idMultiTipo" value="negativo">
                             <label for="negativo" >No</label>
                         </div>
                         <div class="col-6">
                             <label for="categoria">Categoria</label>
                             <label class="asterisco">* </label>
 
-                            <select name="Categoria" class="form-control inputfo">
+                            <select name="Categoria" id="categoria" class="form-control inputfo">
                                 <option value="" class="">Eliga Categoria</option>
                                 <option value="1">Model kits</option>
                                 <option value="2">Mangas</option>
                                 <option value="3">juegos</option>
                                 <option value="4">comics</option>
-                                
                             </select>
                         </div>
                         <div class="col-6">
                             <label for="producto">Producto  </label>
                             <label class="asterisco">* </label>
 
-                            <input type="text" name="nomProducto" class="form-control inputfo" required>
+                            <input type="text" name="nomProducto" id="idProducto" class="form-control inputfo" required>
                         </div>
                         <div class="col-6">
                             <label for="cantidad">Cantidad  </label>
                             <label class="asterisco">* </label>
 
-                            <input type="text" name="Cantidad" class="form-control inputfo" required>
+                            <input type="text" name="Cantidad" id="cantidad" class="form-control inputfo" required>
                         </div>
                         <div class="form-group col-6">
                             <label for="precio">Precio</label>
                             <label class="asterisco">* </label>
 
-                            <input type="text" name="Precio" class="form-control inputfo" required>
+                            <input type="text" name="Precio" id="precio" class="form-control inputfo" required>
                         </div>
                         <div class="form-group col-6">
                             <label for="fecha">Fecha</label>
                             <label class="asterisco">* </label>
 
-                            <input type="date" name="Fecha" class="form-control inputfo" required>
+                            <input type="date" name="Fecha" id="fecha" class="form-control inputfo" required>
                         </div>
-                        <div class="form-group col-6">
-                            <label for="lmensaje">Estado</label>
+                        <div class="form-group col-6" id="idEstado">
+                            <label for="estado">Estado</label>
                             <br>
-                            <input type="radio" id="perfect" name="perfecto" value="perfecto">
+                            <input type="radio" id="perfect" name="idEstado" value="perfecto">
                             <label for="perfecto" >Perfecto</label>
-                            <input type="radio" class="ml-2" id="good" name="bueno" value="bueno">
+                            <input type="radio" class="ml-2" id="good" name="idEstado" value="bueno">
                             <label for="bueno">Bueno</label>
-                            <input type="radio" class="ml-2" id="bad" name="malo" value="malo">
+                            <input type="radio" class="ml-2" id="bad" name="idEstado" value="malo">
                             <label for="Malo" >malo</label>
                             
                         </div>    
@@ -125,6 +124,7 @@
                     <label for="lmensaje" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
                     
                     <a href="tienda.html"><button type="button" class="btn btn-info mt-2 btn-enviar">Crear Producto</button></a>
+
                 </form>
                 
             

@@ -15,7 +15,12 @@ header .color-forzado {
 }
 
 section {
-    background: #DCE7E6 !important;
+    background-color: #DCE7E6;
+    transition: .3s ease all;;
+}
+body.darkmode section{
+    background-color: #1C1D1E;
+    color: #DCE7E6;
 }
 
 /*reglas estandar*/
@@ -46,6 +51,9 @@ hr {
     color: #333;
     margin-top: -12px;
 }
+body.darkmode .muro-texto{
+    color: #DCE7E6;
+}
 
 .muro-texto-titulo {
     font-size: 16px;
@@ -55,6 +63,10 @@ hr {
     color: #222;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    transition: .3s ease all;
+}
+body.darkmode .muro-texto-titulo{
+    color: #ffffff;
 }
 
 .muro-texto-subtitulo {
@@ -65,6 +77,10 @@ hr {
     color: #222;
     padding-top: 0rem;
     padding-bottom: 1rem;
+    transition: .3s ease all;
+}
+body.darkmode .muro-texto-subtitulo{
+    color: #ffffff;
 }
 
 .acercade-mapa {

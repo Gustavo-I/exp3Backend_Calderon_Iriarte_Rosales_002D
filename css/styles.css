@@ -45,9 +45,6 @@ body.darkmode .navbar{
     border-color: #1C1D1E;
     transition: .3s ease all;
 }
-.nav2{
-    background-color: #06206B;
-}
 .carusel{
     height: 300px;
     border-radius: 10px;
@@ -76,10 +73,7 @@ body.darkmode .landing{
     border-radius: 10px;
     padding: 5px;
 }
-.nav2{
-    height: 5px;
-    background-color: #06206B ;
-}
+
 .words{
     text-align: center;
 }
@@ -103,7 +97,6 @@ body.darkmode .landing{
 .raiting i{
     color: #4BA7C6;
     font-size: 26px;
-   
 }
 .testimonial-user{
     max-width: 300px;
@@ -133,7 +126,10 @@ body.darkmode .landing{
     background-color:#B8D9E4;
     padding-bottom: 15px;
     margin-bottom: 0px;
-    ;
+    transition: .3s ease all;
+}
+body.darkmode .let{
+    background-color: #2B2E35;
 }
 .plet{
     margin-top: 15px;
@@ -167,9 +163,7 @@ body.darkmode .landing{
 .h1row{
     margin-top: 15px;
     padding-bottom: 15px;
-    color: #76C7CA;
-    
-   
+    color: #76C7CA;  
 }
 .inputfo{
     border-radius: 0px;
@@ -233,6 +227,7 @@ body.darkmode #myBtn{
 }
 #barraUp{
     color: #1a1a1a;
+    transition: .3s ease all;
 }
 body.darkmode #barraUp{
     color: #DCE7E6;
@@ -241,6 +236,7 @@ body.darkmode #barraUp{
     background-color: #4BA7C6;
     color: #DCE7E6;
     border: #4BA7C6;
+    transition: .3s ease all;
 }
 body.darkmode #BtnD{
     background-color: #1C1D1E;
@@ -250,8 +246,18 @@ body.darkmode #BtnD{
 #BtnU{
     background-color: #4BA7C6;
     color: #DCE7E6;
+    border: #4BA7C6;
+    transition: .3s ease all;
 }
 body.darkmode #BtnU{
     background-color: #1C1D1E;
+    color: #DCE7E6;
+    border: #25201F;
+}
+#Op{
+    color: #1C1D1E;
+    transition: .3s ease all;
+}
+body.darkmode #Op{
     color: #DCE7E6;
 }

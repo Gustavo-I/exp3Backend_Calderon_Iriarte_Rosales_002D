@@ -184,8 +184,9 @@ body.darkmode .let{
 .btn-enviar{
     border-radius: 2px;
 }
-.asteriscorut{
+.asteriscorut,.error{
     font-size: 12px;
+    color: red;
 }
 #bdark{
     width: 30px;

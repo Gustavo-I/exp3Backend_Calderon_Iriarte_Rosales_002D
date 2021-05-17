@@ -59,134 +59,105 @@
 
 
     </nav>
-    <div class="container sd ">
+    <div class="container-fluid sd ">
         <h3 class="h1row">Registro de usuario</h3>
-        
-          
-
-                <form  id="#" method="POST" action="enviar.js" name="formregistro" >
+        <form  id="formulario_user"  action="tienda.html" name="formulario_user" >
                     <div class="row">
                         <div class="form-group col-6">
-                            <label for="nombre">Nombre  </label>
+                            <label for="nombreUser">Nombre  </label>
                             <label class="asterisco">* </label>
 
-                            <input type="text" name="nombreUser" class="form-control inputfo" required>
+                            <input type="text" name="nombreUser" id="nombreUser" class="form-control inputfo" required>
                         </div>
                         <div class="form-group col-6">    
-                            <label for="apellido">Apellido </label>
+                            <label for="apellidoUser">Apellido </label>
                             <label class="asterisco">* </label>
-                            <input type="text " name="apellidoUser" class="form-control inputfo" required>
+                            <input type="text"  name="apellidoUser" id="apellidoUser" class="form-control inputfo" required>
                         </div>
                     
                         <div class="col-6">
-                            <label for="email">Email</label>
+                            <label for="emailUser">Email</label>
                             <label class="asterisco">* </label>
-                            <input type="email" name="emailUser" class="form-control inputfo" required> 
+                            <input type="email" name="emailUser" id="emailUser" class="form-control inputfo" required> 
 
 
                         </div>
                         <div class="col-6">
-                            <label for="email2">repetir Email</label>
+                            <label for="emailUser2">Validar email</label>
                             <label class="asterisco">* </label>
-                            <input type="email" name="emailUser2" class="form-control inputfo" required>    
+                            <input type="email" name="emailUser2" id="emailUser2" class="form-control inputfo" required>
 
                         </div>
                         <div class="col-6">
-                            <label for="password">Contraseña</label>
+                            <label for="passwordUser">Contraseña</label>
+                            <input type="password" name="passwordUser"  id="passwordUser" class="form-control inputfo">
+
+                        </div>
+                        <div class="col-6">
+                            <label for="passwordUser2">validar contraseña</label>
                             <label class="asterisco">* </label>
-                            
-
-                            <input type="password" name="passwordUser" class="form-control inputfo" required>   
+                            <input type="password" name="passwordUser2" id="passwordUser2" class="form-control inputfo">
                         </div>
                         <div class="col-6">
-                            <label for="password2">Repetir Contraseña</label>
-                            <label class="asterisco">* </label>
-                            <input type="password" name="passwordUser2" class="form-control inputfo" required>  
+                            <label for="rutUser">Rut</label>
+                            <label class="asteriscorut">* sin punto y con guion</label>
+                            <input type="text" name="rutUser" id="rutUser" class="form-control inputfo" >
 
                         </div>
                         <div class="col-6">
-                            <label for="rut2">Rut </label>
-                             <label class="asterisco asteriscorut">* sin puntos y con guión</label>
-                             
+                            <label for="telefonoUser">Telefono/Celular</label>
+                            <input type="text" name="telefonoUser" id="telefonoUser" class="form-control inputfo">
 
-                             <input type="text" name="rutUser" class="form-control inputfo" required>
                         </div>
-                        <div class="col-6">
-                            <label for="telefono">Teléfono</label>
-                            <label class="asterisco">* </label>
-
-                            <input type="number" name="telefonoUser" class="form-control inputfo" required>
-                        </div>
-                        <div class="col-6">
-                            <label for="lmensaje">Seleccione Genero: </label>
+                        <div class="col-6" id="generoUser">
+                            <label for="genero">Seleccione genero</label>
                             <br>
-                            <input type="radio" id="hombre" name="genero" value="hombre">
+                            <input type="radio" id="hombre" name="generoUser" value="hombre">
                             <label for="hombre">hombre</label>
                         
-                            <input type="radio" class="ml-2" id="mujer" name="genero" value="mujer">
+                            <input type="radio" class="ml-2" id="mujer" name="generoUser" value="mujer">
                             <label for="mujer" >Mujer</label>
-                            <input type="radio" class="ml-2" id="otro" name="genero" value="otro">
+                            <input type="radio" class="ml-2" id="otro" name="generoUser" value="otro">
                             <label for="otro"> Otro</label>
 
-
                         </div>
+
                         <div class="col-6">
-                            <label for="Regiones">Región</label>
+                            <label for="regionUser">Región</label>
                             <label class="asterisco">* </label>
 
-                            <select name="Region" class="form-control inputfo">
+                            <select name="regionUser" id="regionUser" class="form-control inputfo">
                                 <option value="" class="">Eliga Región</option>
-                                <option value="1">Región de Arica Y Parinatoca</option>ó
-                                <option value="2">Región de Tarapaca</option>
-                                <option value="3">Región de Antofagasta</option>
-                                <option value="4">Región de Atacama</option>
-                                <option value="5">Región de Coquimbo</option>
-                                <option value="6">Región de Valparaíso</option>
-                                <option value="7">Región Metropolitana de Santiago</option>
-                                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
-                                <option value="9">Región del Maule</option>
-                                <option value="10">Región del Ñuble</option>
-                                <option value="11">Región del Biobío</option>
-                                <option value="12">Región de La Araucanía</option>
-                                <option value="13">Región de Los Ríos</option>
-                                <option value="14">Región de Los Lagos</option>
-                                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
-                                <option value="16">Región de Magallanes y la Antártica Chilena</option>
+                                <option value="primera"> region de arica y parinacota</option>
                             </select>
-
                         </div>
                         <div class="col-6">
-                            <label for="comuna"> comuna</label>
+                            <label for="comunaUser">Región</label>
                             <label class="asterisco">* </label>
-                            <select name=comuna class="form-control inputfo"> 
-                                
-                                <option value="">elegir comuna</option>
+
+                            <select name="comunaUser" id="comunaUser" class="form-control inputfo">
+                                <option value="" class="">Eliga comuna</option>
+                                <option value="primera">  maipu</option>
                             </select>
-
                         </div>
                         <div class="col-6">
-                            <label for="calle">calle</label>
+                            <label for="calleUser">Calle</label>
                             <label class="asterisco">* </label>
-                            <input type="text" name="calleUser" class="form-control inputfo" required>
-
+                            <input type="text" name="calleUser" id="calleUser" class="form-control inputfo" placeholder="calle falsa 123">
                         </div>
                         <div class="col-6">
-                            <label for="numero">numero</label>
-                            <label class="asterisco">* </label>
-                            <input type="text" name="numeroCalleuser" class="form-control inputfo" required>
+                        <input type="checkbox" id="terminosUser" name="terminosUser" value="terminosUser" >
+                         <label for="terminosUser" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
                         </div>
-                   
-                        
-                    </div>
-                    <input type="checkbox" id="comida1" name="plato1" value="Cochayuyo" required>
-                    <label for="lmensaje" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
                     
-                    <a href="tienda.html"><button type="button" class="btn btn-info mt-2 btn-enviar">Crear Cuenta</button></a>
-                </form>
+                        <button   id="guardar" class="btn btn-info mt-2 btn-enviar">crear Cuenta</button>
+                        <input type="reset"  class="btn btn-danger ml-2 mt-2">
+
+                    </div>
+         </form>
                 
             
-            
-    </div>
+         </div>
     
 
     <footer class=" py-4 footer text-white ">
@@ -248,13 +219,18 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        <script src="js/formulario.js"></script>
+        <script src="js/traducciones.js"></script>
+    
 </body>

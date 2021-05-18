@@ -36,6 +36,7 @@
 
             </ul>
             
+            <button id="bdark"><i class="bi bi-sun"></i></button>
 
             <form class="form-inline d-flex flex-row "> 
                 <button type="submit" class="btn btn-info ml-5 boton-busqueda" ><i class="bi bi-search"></i></button>
@@ -95,7 +96,7 @@
 
                         </div>
                         <div class="col-6">
-                            <label for="passwordUser2">validar contraseña</label>
+                            <label for="passwordUser2">Validar contraseña</label>
                             <label class="asterisco">* </label>
                             <input type="password" name="passwordUser2" id="passwordUser2" class="form-control inputfo">
                         </div>
@@ -106,15 +107,15 @@
 
                         </div>
                         <div class="col-6">
-                            <label for="telefonoUser">Telefono/Celular</label>
+                            <label for="telefonoUser">Teléfono/Celular</label>
                             <input type="text" name="telefonoUser" id="telefonoUser" class="form-control inputfo">
 
                         </div>
                         <div class="col-6" id="generoUser">
-                            <label for="genero">Seleccione genero</label>
+                            <label for="genero">Seleccione género</label>
                             <br>
                             <input type="radio" id="hombre" name="generoUser" value="hombre">
-                            <label for="hombre">hombre</label>
+                            <label for="hombre">Hombre</label>
                         
                             <input type="radio" class="ml-2" id="mujer" name="generoUser" value="mujer">
                             <label for="mujer" >Mujer</label>
@@ -129,7 +130,7 @@
 
                             <select name="regionUser" id="regionUser" class="form-control inputfo">
                                 <option value="" class="">Eliga Región</option>
-                                <option value="primera"> region de arica y parinacota</option>
+                                <option value="primera"> Region de Arica y Parinacota</option>
                             </select>
                         </div>
                         <div class="col-6">
@@ -138,7 +139,7 @@
 
                             <select name="comunaUser" id="comunaUser" class="form-control inputfo">
                                 <option value="" class="">Eliga comuna</option>
-                                <option value="primera">  maipu</option>
+                                <option value="primera">  Maipú</option>
                             </select>
                         </div>
                         <div class="col-6">
@@ -148,10 +149,10 @@
                         </div>
                         <div class="col-6">
                         <input type="checkbox" id="terminosUser" name="terminosUser" value="terminosUser" required >
-                         <label for="terminosUser" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
+                         <label for="terminosUser" class="mr-5"> Acepto los <a href="quienes_somos.html">términos y condiciones de uso</a><Acepto></Acepto> </label>
                         </div>
                     
-                        <button   id="guardar" class="btn btn-info mt-2 btn-enviar">crear Cuenta</button>
+                        <button   id="guardar" class="btn btn-info mt-2 btn-enviar">Crear Cuenta</button>
                         <input type="reset"  class="btn btn-danger ml-2 mt-2">
 
                     </div>
@@ -233,5 +234,12 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
         <script src="js/formulario.js"></script>
         <script src="js/traducciones.js"></script>
+        <script>
+            const bdark = document.querySelector('#bdark');
+            const body = document.querySelector('body');
+            bdark.addEventListener('click', e =>{
+              body.classList.toggle('darkmode');
+            });
+          </script>
     
 </body>

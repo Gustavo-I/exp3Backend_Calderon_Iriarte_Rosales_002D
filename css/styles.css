@@ -285,3 +285,18 @@ body.darkmode #BtnU{
 body.darkmode #Op{
     color: #DCE7E6;
 }
+#categorias{
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: .3s ease all;
+}
+body.darkmode #categorias{
+    background-color: #1C1D1E;
+    color: #DCE7E6;
+}
+#formulario_user{
+    color: #1a1a1a;
+}
+body.darkmode #formulario_user{
+    color: #1a1a1a;
+}

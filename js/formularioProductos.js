@@ -60,7 +60,7 @@ $("#guardar").click(function(){
         alert('Favor de completar registro  ');
     }
     if($("#form_producto").valid()==true){
-        alert('x');
+        alert('Registro completado, ahora se volvera a la pagina principal, disfrute de su estancia');
         return;
         
     }

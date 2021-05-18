@@ -59,25 +59,24 @@
 
 
     </nav>
-    <div class="container sd mb-5">
+    <div class="container sd">
         <h3 class="h1row">Registro de producto</h3>
 
-                <form  id="form_producto" method="POST" action="tienda.html" name="formregistro" >
+                <form  id="#" method="POST" action="enviar.js" name="formregistro" >
                     <div class="row">
-                        <div class="col-6" id="cantCategorias">
-                            <label for="cantidadcategorias">Productos de varias categorias</label>
-                            <label class="asterisco">* </label>
+                        <div class="col-6">
+                            <label for="lmensaje">Productos de varias categorias</label>
                             <br>
-                            <input type="radio" id="si" name="cantCategorias" value="si">
-                            <label for="si">Si</label>
-                            <input type="radio" class="ml-2" id="no" name="cantCategorias" value="no">
-                            <label for="no" >No</label>
+                            <input type="radio" id="positiv" name="positivo" value="si">
+                            <label for="positivo">Si</label>
+                            <input type="radio" class="ml-2" id="negativ" name="negativo" value="no">
+                            <label for="negativo" >No</label>
                         </div>
                         <div class="col-6">
                             <label for="categoria">Categoria</label>
                             <label class="asterisco">* </label>
 
-                            <select name="categoria" id="categoria" class="form-control inputfo">
+                            <select name="Categoria" class="form-control inputfo">
                                 <option value="" class="">Eliga Categoria</option>
                                 <option value="1">Model kits</option>
                                 <option value="2">Mangas</option>
@@ -108,24 +107,24 @@
                             <label for="fecha">Fecha</label>
                             <label class="asterisco">* </label>
 
-                            <input type="date" name="fecha" id="fecha" class="form-control inputfo" required>
+                            <input type="date" name="Fecha" class="form-control inputfo" required>
                         </div>
-                        <div class="form-group col-6" id="estadoProd">
-                            <label for="estado">Estado</label>
+                        <div class="form-group col-6">
+                            <label for="lmensaje">Estado</label>
                             <br>
-                            <input type="radio" id="perfecto" name="estadoProd" value="perfecto">
+                            <input type="radio" id="perfect" name="perfecto" value="perfecto">
                             <label for="perfecto" >Perfecto</label>
-                            <input type="radio" class="ml-2" id="bueno" name="estadoProd" value="bueno">
+                            <input type="radio" class="ml-2" id="good" name="bueno" value="bueno">
                             <label for="bueno">Bueno</label>
-                            <input type="radio" class="ml-2" id="malo" name="estadoProd" value="malo">
+                            <input type="radio" class="ml-2" id="bad" name="malo" value="malo">
                             <label for="Malo" >malo</label>
                             
                         </div>    
                     </div>
-                    <input type="checkbox" id="terminosUser" name="terminosUser" value="terminosUser" required>
-                    <label for="terminosUser" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
+                    <input type="checkbox" id="checkb" name="check" value="confirm" required>
+                    <label for="lmensaje" class="mr-5"> Acepto los <a href="quienes_somos.html">terminos y condiciones de uso</a><Acepto></Acepto> </label>
                     
-                    <a href="tienda.html"><button id="guardar" class="btn btn-info mt-2 btn-enviar">Crear Producto</button></a>
+                    <a href="tienda.html"><button type="button" class="btn btn-info mt-2 btn-enviar">Crear Producto</button></a>
                 </form>
                 
             
@@ -201,10 +200,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
-    <script src=https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js></script>
-    <script src="js/formularioProductos.js"></script>
-    <script src="js/traducciones.js"></script>
 </body>

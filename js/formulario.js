@@ -65,8 +65,10 @@ $("#formulario_user").validate({
 
 
         },
-       
-        
+        generoUser:{
+            required:true
+        }
+      
     },
 
     messages: {
@@ -86,17 +88,34 @@ $("#formulario_user").validate({
         telefonoUser:{
             required:"ingrese fono de contacto porfavor",
         },
-     
+        generoUser:{
+            required:'porfavor selecciona un genero'
+        }
         
 
-    }
+    },  errorPlacement: function(error, element) 
+    {
+        if ( element.is(":radio") ) 
+        {
+            error.appendTo( element.parents('.container') );
+        }
+        else 
+        { // This is the default behavior 
+            error.insertAfter( element );
+        }
+     }
+});
+    
 
-})
+
+
 
 
 
 
 $("#guardar").click(function(){
+   
+      
     if($("#formulario_user").valid()==false){
         return;
         alert('Favor de completar registro  ');
@@ -121,15 +140,17 @@ $("#guardar").click(function(){
    let comunaUser=$("#comunaUser").val()
    let calleUser=$("#calleUser").val()
    let terminosUser=$("#terminosUser").is(":checked")
+   let generoUser=$("name=generoUser").is(":checked")
 
 
   
      
    //construir un json y enviar los datos por post
 })
-$("#guardar").click(function(event) {
+
+/*$("#guardar").click(function(event) {
     if(!$("#generoUser input[name='generoUser']").is(':checked')){
-        alert('Favor de completar registro  ');
+       alert('porfavor elejir genero')
     }
   })
-  
+  */

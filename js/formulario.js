@@ -1,5 +1,7 @@
 
 
+
+
 $("#formulario_user").validate({
     rules:{
         nombreUser:{
@@ -100,7 +102,7 @@ $("#formulario_user").validate({
             error.appendTo( element.parents('.container') );
         }
         else 
-        { // This is the default behavior 
+        { 
             error.insertAfter( element );
         }
      }

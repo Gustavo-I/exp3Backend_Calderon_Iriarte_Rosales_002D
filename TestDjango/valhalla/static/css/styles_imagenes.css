@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .cont-modelkits{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    padding: 100px;
+    grid-gap: 5px;
+  }
+  
+  .cont-modelkits .imagen{
+    width: 85%;
+    position: relative;
+    height: 85%;
+    margin-bottom: 5px;
+  }
+  
+  .cont-mangas{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+  }
+  
+  .cont-mangas .imagen{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+  
+  }
+  .cont-juegos{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+  }
+  
+  .cont-juegos .imagen{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .cont-comics{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+  }
+  
+  .cont-comics .imagen{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .imagen img{
+    width: 100%;
+    height: 100%;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(128, 0, 128);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  .overlay p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+  }

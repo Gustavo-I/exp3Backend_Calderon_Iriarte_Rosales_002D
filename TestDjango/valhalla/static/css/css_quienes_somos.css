@@ -1,0 +1,148 @@
+/*configuración general*/
+
+/*fuente encabezados*/
+
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header .container-fluid {
+    background: #fafcfc;
+}
+
+header .color-forzado {
+    background: white !important;
+}
+
+section {
+    background-color: #DCE7E6;
+    transition: .3s ease all;;
+}
+body.darkmode section{
+    background-color: #1C1D1E;
+    color: #DCE7E6;
+}
+
+/*reglas estandar*/
+
+select {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    height: 1px;
+}
+
+.margen-estandar {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+
+.muro-texto {
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+    margin-top: -12px;
+}
+body.darkmode .muro-texto{
+    color: #DCE7E6;
+}
+
+.muro-texto-titulo {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #222;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    transition: .3s ease all;
+}
+body.darkmode .muro-texto-titulo{
+    color: #ffffff;
+}
+
+.muro-texto-subtitulo {
+    font-size: 12px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #222;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    transition: .3s ease all;
+}
+body.darkmode .muro-texto-subtitulo{
+    color: #ffffff;
+}
+
+.acercade-mapa {
+    margin-bottom: 2rem;
+}
+
+.modulo-auxiliar {
+    border: 1px solid #e1ebf2;
+    border-top: 5px solid #e1ebf2;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5px;
+    padding-top: 1rem !important;
+    margin-top: 2rem;
+    overflow: auto;
+    background: #fafcfc;
+}
+
+.modulo-auxiliar h4 {
+    padding: 0;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.menu-columna-auxiliar {
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+.menu-columna-auxiliar li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu-columna-auxiliar li i {
+    font-size: 9px;
+    padding-right: 1px;
+    color: #aaa;
+    position: relative;
+    bottom: 2px;
+}
+
+.columna-auxiliar-titulo {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    text-decoration: unset;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.columna-auxiliar-titulo i {
+    padding-right: 4px;
+}
+
+.separador {
+    margin-bottom: 2rem;
+}

@@ -77,20 +77,31 @@
     </div>
     <br><br>
 
-    <table class="table" id="categorias">
-        <thead>
-            <tr>
-                <th scope="col">Categoria</th>
-                <th scope="col">Escala</th>
-                <th scope="col">Fecha Estimada</th>
-                <th scope="col">Nombre</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="container-fluid row">
+            <table class="table" id="categorias"><!--mostramos todos los productos almacenados en admin-->
+                <thead>
+                    <tr>
+                        <th scope="col">Numero serie</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Categoria</th>
+                    </tr>
+                    {%for ve in datos %}
+                        <tr>
+                            <th>{{ve.numeroSerie}} </th>
+                            <th>{{ve.marca}}</th>
+                            <th>{{ve.modelo}}</th>
+                            <th>{{ve.categoria}}</th>
 
-        </tbody>
+                        </tr>
+                    {%endfor%}
+                </thead>
+                <tbody>
 
-    </table>
+                </tbody>
+
+            </table>
+    </div>
     <script>
         const bdark = document.querySelector('#bdark');
         const body = document.querySelector('body');

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" type="text/css"> 
+
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css" >
+    <link rel="stylesheet" href="{% static 'css/styles_imagenes.css'%}" type="text/css">
+    <script src=" {% static 'js/funciones.js'%}"></script>
+    <link rel="shortcut icon" href="{% static 'img/logo4.png'%}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Preventa!</title>
+   
+    <style>
+        #caja{
+            margin-left:40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/logo4.png' %}" width="50" height="50" alt="">
+        <a class="navbar-brand" href="{% url 'index' %}" id="barraUp">ValhallaGeek</a>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link " href="{% url 'tienda' %}" id="barraUp">Tienda </a>
+                </li>
+                
+
+
+            </ul>
+           
+            
+            <button id="bdark"><i class="bi bi-sun"></i></button>
+
+            <form class="form-inline d-flex flex-row "> 
+                <button type="submit" class="btn btn-info ml-5 boton-busqueda"  id="BtnU"><i class="bi bi-search" id="BtnU"></i></button>
+                
+                <input class="form-control   ml-0 busqueda " placeholder="Buscar" aria-label="search">
+                    
+                <button type="button  " class="btn  btn-info  m  " id="BtnU"><i class="bi bi-cart" id="BtnU"></i></button>
+
+
+             </form>
+            
+            
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </nav>
+    
+    <h1>Nuevos productos que llegaran al Valhalla</h1>
+    <br><br>
+    <div id="caja">
+        <button type="button" id="enviar">Productos</button>
+    </div>
+    <br><br>
+
+    <table class="table" id="categorias">
+        <thead>
+            <tr>
+                <th scope="col">Categoria</th>
+                <th scope="col">Escala</th>
+                <th scope="col">Fecha Estimada</th>
+                <th scope="col">Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('body');
+        bdark.addEventListener('click', e =>{
+          body.classList.toggle('darkmode');
+        });
+      </script>
+</body>
+</html>

@@ -29,9 +29,9 @@
                 <li class="nav-item active">
                     <a class="nav-link " href="{% url 'tienda' %}" id="barraUp">Tienda </a>
                 </li>
-                
-
-
+                <li class="nav-item active">
+                    <a class="nav-link " href="{% url 'preventa' %}" id="barraUp">Preventa </a>
+                </li>
             </ul>
            
             
@@ -63,7 +63,7 @@
     <div class="container sd mb-5">
         <h3 class="h1row">Registro de producto</h3>
 
-                <form  id="form_producto" method="POST" action="{% url 'preventa' %}" name="formregistro" >
+                <form  id="form_producto" method="POST" action="#" name="formregistro" >
                     <div class="row">
                         {%csrf_token%}                        
                         <div class="col-6">
